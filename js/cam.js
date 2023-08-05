@@ -17,16 +17,17 @@ video.addEventListener("click", () => {
   }
 
   video.addEventListener("loadedmetadata", () => {
-    window.requestAnimationFrame(this.draw.bind(this));
+    const map = document.getElementById("map");
+    map.width = video.videoWidth;
+    map.height = video.videoHeight;
+
+    map.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
   });
 
   function draw(t) {
-    window.requestAnimationFrame(this.draw.bind(this));
-
-    const canvas = document.querySelector("#mirrored");
-    const video = document.querySelector("#videoElement");
-    canvas.width = video.videoWidth;
-    canvas.height = video.videoHeight;
+    const map = document.getElementById("map");
+    map.width = video.videoWidth;
+    map.height = video.videoHeight;
 
     const ctx = canvas.getContext("2d");
     ctx.translate(video.videoWidth, 0);
