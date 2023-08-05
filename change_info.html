@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/change_info.css" />
+
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+    <title>회원가입 - 비밀번호 입력</title>
+</head>
+
+<body>
+    <div class="container-back">
+        <button type="button">
+            <img src="image/arrow_back_ios.svg" alt="">
+        </button>
+    </div>
+
+    <h1>변경할 비밀번호를 입력해 주세요</h1>
+
+    <h4>기존 비밀번호</h4>
+
+    <form method="post" action="sign-password.js">
+
+        <div class="container-password">
+            <input type="password" name="user_password" autocomplete="off">
+
+            <button type="button" class="password-visible">
+                <img src="image/visibility_off.svg" alt="">
+            </button>
+        </div>
+
+        <h4>새 비밀번호</h4>
+
+        <div class="container-newpassword">
+            <input type="tel" name="user_phone" value="password">
+            <button type="button" class="password-visible">
+            <img src="image/view.svg" alt="">
+        </button>
+        </div>
+        <button type="submit">다음</button>
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>
