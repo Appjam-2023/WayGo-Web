@@ -1,0 +1,30 @@
+* {
+    margin: 0 auto; 
+    padding: 0;
+    font-family: "SUIT", sans-serif;
+  }
+.check_circle{
+    margin-left: 15vw;
+    margin-top: 60vmin;
+}
+.check_circle img{
+    margin-left: 20vw;
+    margin-bottom: 5vw;
+}
+.check_circle p{
+    font-weight: 800;
+    font-size: 6vmin;
+    margin-left: 7vw;
+}
+button[type="button"]{
+    position: absolute;
+  width: 89vw;
+  height: 12vmin;
+  border: 0;
+  border-radius: 6px;
+  background-color: #59cad4;
+  color: white;
+  font-size: 3.5vw;
+  bottom: 13vmin;
+  left: 5.5%;
+}
