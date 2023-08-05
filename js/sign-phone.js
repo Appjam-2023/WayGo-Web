@@ -2,7 +2,7 @@ const back = document.getElementById("back");
 const phone = document.getElementById("user_phone");
 const error = document.getElementById("error");
 const img = document.getElementById("error-img");
-const button2 = document.getElementById("button");
+const button2 = document.getElementById("buttons");
 
 back.addEventListener("click", () => {
   location.href = "sign-select.html";
