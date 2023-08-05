@@ -15,7 +15,7 @@
 
 <body>
     <div class="container-back">
-        <button type="button">
+        <button type="button" id="back">
             <img src="image/arrow_back_ios.svg" alt="">
         </button>
     </div>
@@ -24,12 +24,16 @@
 
     <h4>전화번호</h4>
 
-    <form method="post" action="sign-phone.js">
-        <input type="tel" name="user_phone" placeholder="01012345678">
+    <input type="tel" name="user_phone" id="user_phone" placeholder="01012345678">
 
-        <button type="submit">다음</button>
-    </form>
+    <button type="button" id="buttons">다음</button>
 
+    <h5 id="error">
+        <img src="image/emergency_home.svg" id="error-img">
+        이미 가입되어 있는 전화번호예요.
+    </h5>
+
+    <script src="js/sign-phone.js"></script>
 </body>
 
 </html>

@@ -10,8 +10,9 @@
   margin-bottom: 8vmin;
 }
 
-button {
+button[type="button"] {
   border: 0;
+  filter: opacity(0.5) drop-shadow(0 0 0 #2f2f2f) contrast(40%) saturate(1000%);
   background-color: transparent;
 }
 
@@ -27,6 +28,16 @@ h4 {
   font-weight: 700;
   margin-left: 6.6vw;
   margin-bottom: 2vmin;
+}
+
+h5 {
+  margin-left: 7vw;
+  margin-top: 4vmin;
+  color: white;
+}
+
+img {
+  filter: brightness(0) invert(1);
 }
 
 input[type="tel"] {

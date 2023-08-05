@@ -6,7 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="css/arrive_map.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+        $('html, body').css({ 'overflow': 'hidden', 'height': '100%' });
+
+        $('#element').on('scroll touchmove mousewheel', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        });
+    </script>
+
+
+    < link rel="stylesheet" type="text/css" href="css/arrive_map.css" />
 
     <title>Kakao 지도 시작하기</title>
 </head>
@@ -30,7 +47,6 @@
 
     <script type="text/javascript"
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=404fd4b9ee78b5e5fde11d74a3e414cd"></script>
-    <script src="js/map.js"></script>
 </body>
 
 </html>
