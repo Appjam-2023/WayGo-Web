@@ -8,6 +8,32 @@
   width: 100%;
 }
 
+.container-button {
+  z-index: 99999;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 39vw;
+  bottom: 20vmin;
+}
+
+img {
+  width: 60%;
+  height: 60%;
+}
+
+button[type="button"] {
+  background-color: #59cad4;
+  width: 15vw;
+  height: 15vmin;
+  border-radius: 55px;
+  border: 0;
+  margin-bottom: 3vmin;
+}
+
 .navbar {
   width: 100%;
   height: auto;
