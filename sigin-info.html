@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sign-info.css">
+    <title>로그인-정보 입력</title>
+</head>
+<body>
+    <div class="container-back">
+        <button type="button">
+            <img src="image/arrow_back_ios.svg" alt="">
+        </button>
+    </div>
+
+    <h1>기존 계정 정보로 로그인해주세요</h1>
+
+    <h4>전화번호</h4>
+
+    <form method="post" action="sign-password.js">
+
+        <input type="tel" name="user_phone" value="01012345678" disabled readonly>
+
+        <h4>비밀번호</h4>
+
+        <div class="container-password">
+            <input type="password" name="user_password" autocomplete="off">
+
+            <button type="button" class="password-visible">
+                <img src="image/visibility_off.svg" alt="">
+            </button>
+        </div>
+
+        <button type="submit">다음</button>
+</body>
+</html>
