@@ -38,6 +38,10 @@ input[type="tel"] {
   border: 1px solid #c8c7d5;
 }
 
+input:focus {
+  outline: 1px solid #59cad4;
+}
+
 button[type="submit"] {
   position: absolute;
   width: 89vw;
