@@ -1,10 +1,43 @@
 * {
-  height: 100%;
+  height: 97%;
   margin: 0;
   padding: 0;
 }
 
 .map {
-  width: 100vw;
-  height: 100vmin;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 8vmin;
+}
+
+.navbar input[type="radio"] {
+  display: none;
+}
+
+.navbar-img {
+  width: 6vmin;
+  height: 10vmin;
+}
+
+.navbar input[type="radio"] + label {
+  width: 19vmin;
+  height: 10vmin;
+  font-size: 1.6vh;
+  line-height: 2.5vh;
+  text-align: center;
+  margin-left: 2.3%;
+  color: gray;
+}
+
+.navbar input[type="radio"]:checked + label {
+  color: black;
+  filter: black;
 }
