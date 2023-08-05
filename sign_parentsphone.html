@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container-back">
-        <button type="button">
+        <button type="button" id="back">
             <img src="image/arrow_back_ios.svg" alt="">
         </button>
     </div>
@@ -22,25 +24,25 @@
         <h4>보호자 전화번호</h4>
     </div>
 
-    <form method="post" action="sign-phone.js">
-        <input type="tel" name="user_phone" placeholder="01012345678">
-    
-    
+    <input type="tel" name="user_phone" placeholder="01012345678">
+
+
     <div class="h3-text">
         <h4>전화번호</h4>
     </div>
 
-    <form method="post" action="sign-phone.js">
-        <input type="tel" name="user_phone" placeholder="01012345678" disabled>
+    <input type="tel" name="user_phone" value="01012345678" id="user_phone" disabled readonly>
 
-        <button type="submit">입력버튼</button>
-    </form>
-    
+    <button type="submit" id="complete">입력완료</button>
+
     <div class="plus">
         <button type="add">
             <img src="image/add.svg" alt="add">
             <p>번호 추가하기</p>
         </button>
     </div>
+
+    <script src="js/sign_parentsphone.js"></script>
 </body>
+
 </html>

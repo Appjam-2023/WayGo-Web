@@ -15,7 +15,7 @@
 
 <body>
     <div class="container-back">
-        <button type="button">
+        <button type="button" id="back">
             <img src="image/arrow_back_ios.svg" alt="">
         </button>
     </div>
@@ -24,32 +24,25 @@
 
     <h4>기존 비밀번호</h4>
 
-    <form method="post" action="sign-password.js">
+    <div class="container-password">
+        <input type="password" name="user_password" autocomplete="off" id="password">
 
-        <div class="container-password">
-            <input type="password" name="user_password" autocomplete="off">
+        <button type="button" class="password-visible" id="visible">
+            <img src="image/visibility_off.svg" alt="">
+        </button>
+    </div>
 
-            <button type="button" class="password-visible">
-                <img src="image/visibility_off.svg" alt="">
-            </button>
-        </div>
+    <h4>새 비밀번호</h4>
 
-        <h4>새 비밀번호</h4>
+    <div class="container-newpassword">
+        <input type="tel" name="user_phone" placeholder="password">
+        <button type="button" class="password-visible">
+            <img src="image/view.svg" alt="">
+        </button>
+    </div>
+    <button type="submit" id="next">다음</button>
 
-        <div class="container-newpassword">
-            <input type="tel" name="user_phone" value="password">
-            <button type="button" class="password-visible">
-                <img src="image/view.svg" alt="">
-            </button>
-        </div>
-        <button type="submit">다음</button>
-    </form>
-
-
-
-
-
-
+    <script src="js/change-password.js"></script>
 </body>
 
 </html>

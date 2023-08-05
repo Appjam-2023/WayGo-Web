@@ -15,7 +15,7 @@
 
 <body>
     <div class="container-back">
-        <button type="button">
+        <button type="button" id="back">
             <img src="image/arrow_back_ios.svg" alt="">
         </button>
     </div>
@@ -24,22 +24,15 @@
 
     <h4>변경 할 전화번호</h4>
 
-    <form method="post" action="sign-password.js">
 
-        <div class="container-password">
-            <input type="tel" name="user_password" autocomplete="off" value="01012345678">
+    <div class="container-password">
+        <input type="tel" name="user_password" autocomplete="off" value="01012345678" id="user_phone">
+    </div>
 
-            <button type="button" class="password-visible"></button>
-        </div>
-
-        <button type="submit">완료</button>
-    </form>
+    <button type="submit" id="buttons">완료</button>
 
 
-
-
-
-
+    <script src="js/change-phone.js"></script>
 </body>
 
 </html>

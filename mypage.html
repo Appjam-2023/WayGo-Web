@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mypage.css">
+    <link rel="stylesheet" href="css/mypage3.css">
     <title>마이페이지</title>
 </head>
 
@@ -27,46 +27,53 @@
     <div class="retouch-container">
         <h6 class="h2-text">프로필 수정</h6>
         <div class="changes">
-            <div class="change">
+            <button type="button" class="change" id="phone">
                 <img src="image/call.svg">
-                <h4 class="change-icon">전화번호 변경</h4>
-            </div>
-            <div class="change">
+                <h4 전화번호 class="change-icon">전화번호 변경</h4>
+            </button>
+
+            <br>
+
+            <button type="button" class="change" id="password">
                 <img src="image/group_remove.svg">
                 <h4 class="change-icon">비밀번호 변경</h4>
-            </div>
-            <div class="change">
+            </button>
+
+            <br>
+
+            <button type="button" class="change" id="location">
                 <img src="image/manage_accounts.svg">
                 <h4 class="change-icon">목적 변경</h4>
-            </div>
+            </button>
         </div>
     </div>
 
     <div class="retouch-container">
         <h6 class="h2-text">계정관련</h6>
         <div class="changes">
-            <div class="change">
+            <button type="button" class="change" id="remove">
                 <img src="image/manage_accounts.svg">
                 <h4 class="change-icon">계정 탈퇴</h4>
-            </div>
-            <div class="change">
+            </button>
+            <button type="button" class="change" id="exit">
                 <img src="image/link_off.svg">
                 <h4 class="change-icon">연결 끊기</h4>
-            </div>
+            </button>
         </div>
     </div>
 
     <div class="navbar">
-        <input type="radio" name="navbar" id="nav-btn1" value="home" checked>
-        <label for="nav-btn1" style="margin-left: 73px;">
+        <input type="radio" name="navbar" id="navbtn1" value="home">
+        <label for="navbtn1" style="margin-left: 73px;">
             <img src="image/share_location.svg" class="navbar-img" alt=""><br>일정</label>
         </label>
 
-        <input type="radio" name="navbar" id="nav-btn2" value="calendar">
-        <label for="nav-btn2">
+        <input type="radio" name="navbar" id="navbtn2" value="calendar" checked>
+        <label for="navbtn2">
             <img src="image/account_circle.svg" class="navbar-img" alt=""><br>홈
     </div>
 
+    <script src="js/mypage2.js"></script>
 
 </body>
 
